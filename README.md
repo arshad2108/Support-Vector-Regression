@@ -47,10 +47,13 @@ For error measurement I have used mean-squared-error.
 ### PRE_REQ:-
 I have tried implemented this by using cvxopt solver. 
 This method which I have implemented is directly based on solving the minimising problem which we got from epsilon tube assumption.
+
+
 ![svr paper](/image/Picture2.jpg "It follows this mathematical equation")
 
+
 This method is quite general can be utilised for multiple kernels like linear kernel, polynomial kernel as well as Gaussian kernel.
-Algorithm:-
+### Algorithm:-
 To formulate this and to overcome ai and ai* I used a single 2n length array of which first n are ai and rest are ai*,  so therefore the equivalent p matrix became [K(x,y) -K(x,y),-K(x,y) K(x,y)]. Similarly I made the rest matrices accordingly and later just formulated what was given in the paper, you given.
 In this algorithm, soft margin classifier as well as hard margin classifier can be achieved.
 For checking and validation the methods implemented to be used are training test validation split as well as k fold cross validation split.
@@ -58,7 +61,7 @@ Error function is used is mean squared error.
 
 
 
-OBSERVATION:-
+## OBSERVATION:-
 Smaller epsilon as well as much bigger epsilon were giving greater error, for me epsilon=0.3 worked well averagely.
 Increasing C and reducing epsilon were increasing the no. of support vectors, likely to be overfitting and underfitting for the vice versa.
 For me, Cvxopt_paper with gaussian kernel give the best result with C=1 and epsilon=0.1 gave the best results.

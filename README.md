@@ -61,9 +61,3 @@ For checking and validation the methods implemented to be used are training test
 Error function is used is mean squared error. 
 
 
-
-## OBSERVATION:-
-Smaller epsilon as well as much bigger epsilon were giving greater error, for me epsilon=0.3 worked well averagely.
-Increasing C and reducing epsilon were increasing the no. of support vectors, likely to be overfitting and underfitting for the vice versa.
-For me, Cvxopt_paper with gaussian kernel give the best result with C=1 and epsilon=0.1 gave the best results.
-

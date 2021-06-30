@@ -45,11 +45,12 @@ For error measurement I have used mean-squared-error.
 *	SVR initialisation:- __init__(self, kernel=linear_kernel, C=1 ,epsilon=0.3)
 
 ### PRE_REQ:-
-I have tried to implement this [paper](https://doi.org/10.1016/S0925-2312(03)00380-1) using cvxopt solver.
+I have tried to implement this <a href="https://doi.org/10.1016/S0925-2312(03)00380-1" target="_blank">paper</a> using cvxopt solver.
 This method which I have implemented is directly based on solving the minimising problem which we got from epsilon tube assumption.
 
 
-![svr paper](/image/Picture2.jpg "It follows this mathematical equation"){:target="_blank"}
+![svr paper](/image/Picture2.jpg "It follows this mathematical equation")
+
 
 
 This method is quite general can be utilised for multiple kernels like linear kernel, polynomial kernel as well as Gaussian kernel.
